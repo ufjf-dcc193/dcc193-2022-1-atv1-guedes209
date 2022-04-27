@@ -1,5 +1,8 @@
 package br.ufjf.dcc193.bruno.quest;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Cavaleiro implements Heroi{
 
     public Cavaleiro(){
