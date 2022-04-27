@@ -4,13 +4,25 @@ public class Missao {
 
     private Cavaleiro cavaleiro;
 
+    public Missao(Cavaleiro cavaleiro){
+        System.out.println("O Rei criou uma nova missao");
+        setCavaleiro(cavaleiro);
+    }
+
     public Missao(){
-        System.out.println("A missao foi construida");
-        this.cavaleiro = new Cavaleiro();
+        this(null);
     }
 
     public void iniciar(){
         System.out.println("Iniciou missão");
+    }
+
+    public Cavaleiro getCavaleiro() {
+        return cavaleiro;
+    }
+
+    public void setCavaleiro(Cavaleiro cavaleiro) {
+        this.cavaleiro = cavaleiro;
     }
 
     public void concluir(){
