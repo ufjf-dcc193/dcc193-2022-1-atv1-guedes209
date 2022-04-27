@@ -1,9 +1,11 @@
 package br.ufjf.dcc193.bruno.quest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Missao {
     @Autowired
     private Heroi heroi;
