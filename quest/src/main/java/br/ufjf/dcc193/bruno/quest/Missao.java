@@ -2,11 +2,11 @@ package br.ufjf.dcc193.bruno.quest;
 
 public class Missao {
 
-    private Cavaleiro cavaleiro;
+    private Heroi heroi;
 
-    public Missao(Cavaleiro cavaleiro){
+    public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missao");
-        setCavaleiro(cavaleiro);
+        setHeroi(heroi);
     }
 
     public Missao(){
@@ -17,16 +17,16 @@ public class Missao {
         System.out.println("Iniciou missão");
     }
 
-    public Cavaleiro getCavaleiro() {
-        return cavaleiro;
+    public Heroi getHeroi() {
+        return heroi;
     }
 
-    public void setCavaleiro(Cavaleiro cavaleiro) {
-        this.cavaleiro = cavaleiro;
+    public void setHeroi(Heroi heroi) {
+        this.heroi = heroi;
     }
 
     public void concluir(){
-        cavaleiro.agir();
+        heroi.agir();
         System.out.println("Concluiu missao");
     }
 }
